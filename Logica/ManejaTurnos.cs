@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Interfaces;
-using Entidades;
+using Entidades;//arreglado
 using System.Data.SqlClient;
 using System.Data;
 using Datos;

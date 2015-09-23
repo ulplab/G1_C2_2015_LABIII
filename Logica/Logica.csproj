@@ -52,7 +52,7 @@
       <Name>Datos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{8c359bfc-deca-4b7c-8418-84e376cb2367}</Project>
+      <Project>{ebf06c33-e7bd-47f7-8ff1-823b389016b3}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
     <ProjectReference Include="..\ParcialLab2\Interfaces.csproj">

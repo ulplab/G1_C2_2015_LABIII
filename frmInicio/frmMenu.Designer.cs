@@ -75,6 +75,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.tbTurnos = new System.Windows.Forms.TabPage();
             this.dgvTurnos = new System.Windows.Forms.DataGridView();
+            this.cmsTurnos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.confirmarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -93,9 +96,6 @@
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.cmsUsuario = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.eliminarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsTurnos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.confirmarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tcMedicos.SuspendLayout();
             this.tpMedicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicos)).BeginInit();
@@ -105,10 +105,10 @@
             this.cmsPacientes.SuspendLayout();
             this.tbTurnos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTurnos)).BeginInit();
+            this.cmsTurnos.SuspendLayout();
             this.tpUsuarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.cmsUsuario.SuspendLayout();
-            this.cmsTurnos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcMedicos
@@ -659,6 +659,27 @@
             this.dgvTurnos.Size = new System.Drawing.Size(910, 215);
             this.dgvTurnos.TabIndex = 4;
             // 
+            // cmsTurnos
+            // 
+            this.cmsTurnos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.confirmarAsistenciaToolStripMenuItem,
+            this.eliminarToolStripMenuItem1});
+            this.cmsTurnos.Name = "cmsUsuario";
+            this.cmsTurnos.Size = new System.Drawing.Size(185, 48);
+            // 
+            // confirmarAsistenciaToolStripMenuItem
+            // 
+            this.confirmarAsistenciaToolStripMenuItem.Name = "confirmarAsistenciaToolStripMenuItem";
+            this.confirmarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.confirmarAsistenciaToolStripMenuItem.Text = "Confirmar Asistencia";
+            // 
+            // eliminarToolStripMenuItem1
+            // 
+            this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
+            this.eliminarToolStripMenuItem1.Text = "Eliminar";
+            this.eliminarToolStripMenuItem1.Click += new System.EventHandler(this.eliminarToolStripMenuItem1_Click);
+            // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -910,27 +931,6 @@
             this.eliminarToolStripMenuItem2.Text = "Eliminar";
             this.eliminarToolStripMenuItem2.Click += new System.EventHandler(this.eliminarToolStripMenuItem2_Click);
             // 
-            // cmsTurnos
-            // 
-            this.cmsTurnos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.confirmarAsistenciaToolStripMenuItem,
-            this.eliminarToolStripMenuItem1});
-            this.cmsTurnos.Name = "cmsUsuario";
-            this.cmsTurnos.Size = new System.Drawing.Size(185, 48);
-            // 
-            // confirmarAsistenciaToolStripMenuItem
-            // 
-            this.confirmarAsistenciaToolStripMenuItem.Name = "confirmarAsistenciaToolStripMenuItem";
-            this.confirmarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.confirmarAsistenciaToolStripMenuItem.Text = "Confirmar Asistencia";
-            // 
-            // eliminarToolStripMenuItem1
-            // 
-            this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.eliminarToolStripMenuItem1.Text = "Eliminar";
-            this.eliminarToolStripMenuItem1.Click += new System.EventHandler(this.eliminarToolStripMenuItem1_Click);
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -960,11 +960,11 @@
             this.tbTurnos.ResumeLayout(false);
             this.tbTurnos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTurnos)).EndInit();
+            this.cmsTurnos.ResumeLayout(false);
             this.tpUsuarios.ResumeLayout(false);
             this.tpUsuarios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.cmsUsuario.ResumeLayout(false);
-            this.cmsTurnos.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
