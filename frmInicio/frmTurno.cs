@@ -31,6 +31,8 @@ namespace frmInicio
         private void frmTurno_Load(object sender, EventArgs e)
         {
             this.Text = "Turno para: " + ((clsPaciente)paciente).Nombre + " " + ((clsPaciente)paciente).Apellido + " documento: " + ((clsPaciente)paciente).Dni;
+            
+
         }
 
         /// <summary>
