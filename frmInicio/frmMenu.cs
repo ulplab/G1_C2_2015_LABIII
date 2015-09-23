@@ -30,7 +30,7 @@ namespace frmInicio
 
         bool edicion = false;
         frmInicio padre;
-
+        //coment pull
 
         public frmMenu(frmInicio inicio)
         {
