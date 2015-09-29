@@ -56,7 +56,7 @@ namespace Logica
                 throw ex;
             }
 
-
+            //solo un coment
 
         }
         public List<IEntidad> Todo()
